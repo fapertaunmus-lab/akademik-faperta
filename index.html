@@ -20,89 +20,18 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
-        }
-
-        body {
-            background:
-                radial-gradient(
-                    circle at 20% 20%,
-                    rgba(50, 205, 50, 0.35),
-                    transparent 35%
-                ),
-                radial-gradient(
-                    circle at 80% 80%,
-                    rgba(0, 128, 0, 0.35),
-                    transparent 40%
-                ),
-                linear-gradient(
-                    135deg,
-                    #000000 0%,
-                    #021a08 35%,
-                    #063b12 65%,
-                    #000000 100%
-                );
-        }
-
-        /* Lapisan efek hijau */
-        body::before {
-            content: "";
-            position: fixed;
-            inset: 0;
-            pointer-events: none;
-            background:
-                linear-gradient(
-                    135deg,
-                    transparent 0%,
-                    rgba(50, 205, 50, 0.08) 35%,
-                    transparent 55%
-                ),
-                linear-gradient(
-                    315deg,
-                    transparent 0%,
-                    rgba(0, 255, 80, 0.06) 40%,
-                    transparent 70%
-                );
-            z-index: 0;
-        }
-
-        /* Garis dekorasi */
-        body::after {
-            content: "";
-            position: fixed;
-            inset: 0;
-            pointer-events: none;
-            background:
-                linear-gradient(
-                    135deg,
-                    transparent 48%,
-                    rgba(80, 255, 80, 0.12) 49%,
-                    transparent 50%
-                ),
-                linear-gradient(
-                    315deg,
-                    transparent 48%,
-                    rgba(50, 205, 50, 0.08) 49%,
-                    transparent 50%
-                );
-            background-size: 500px 500px;
-            z-index: 0;
+            background: #000000;
         }
 
         iframe {
-            position: relative;
-            z-index: 1;
-
             display: block;
-
             width: 100%;
             height: 100%;
             height: 100dvh;
-
             border: 0;
             margin: 0;
             padding: 0;
-
-            background: transparent;
+            background: #000000;
         }
     </style>
 </head>
