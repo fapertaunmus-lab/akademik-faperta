@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -15,23 +14,40 @@
 
         html,
         body {
-            margin: 0;
-            padding: 0;
             width: 100%;
             height: 100%;
+            margin: 0;
+            padding: 0;
             overflow: hidden;
-            background: #000000;
+            background: #000;
         }
 
-        iframe {
-            display: block;
-            width: 100%;
-            height: 100%;
+        body {
+            position: fixed;
+            inset: 0;
+        }
+
+        #app {
+            position: fixed;
+            inset: 0;
+
+            width: 100vw;
+            height: 100vh;
+
+            width: 100dvw;
             height: 100dvh;
-            border: 0;
+
+            display: block;
+
             margin: 0;
             padding: 0;
-            background: #000000;
+
+            border: none;
+            outline: none;
+
+            background: #000;
+
+            overflow: hidden;
         }
     </style>
 </head>
@@ -42,7 +58,8 @@
         id="app"
         src="https://script.google.com/macros/s/AKfycbyi4v9RdEOjjK-TK6CVgw7CjqRqmCIi5abHf6866XHT9a8BBBSGIuOjKmmgIGWbGcUJ_A/exec"
         allow="clipboard-read; clipboard-write"
-        loading="eager">
+        loading="eager"
+        frameborder="0">
     </iframe>
 
 </body>
